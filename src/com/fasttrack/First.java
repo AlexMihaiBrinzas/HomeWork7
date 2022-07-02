@@ -36,6 +36,31 @@ public class First {
 
 
 
+      Bottle Pepsi= new Bottle(true,3,"yes",true,false,"open");
+      System.out.println("Bottle has more liquid is " +Pepsi.isCapacity());
+      System.out.println("Available Liquid is " + Pepsi.availableliquid());
+      System.out.println("The capacity is " + Pepsi.getEmpty());
+
+      //System.out.println(Pepsi.isOpened());
+      //Bottle Sprite =new Bottle("open" );
+
+      Bottle Open = new Bottle( "open");
+      Bottle Close = new Bottle( "closed");
+
+
+      if ("open".equals(Open.state())){
+        Open.setOpened();
+      }
+      System.out.println("Bottle is open " + Open.setOpened());
+
+      if("close".equals(Close.state())){
+        Close.close();
+      }
+      System.out.println("Bottle is closed " + Close.close());
+
+
+
+
     }
 
 }
