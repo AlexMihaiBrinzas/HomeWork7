@@ -1,6 +1,6 @@
 package com.fasttrack;
 
-public class First {
+public class Main {
     public static void main(String[] args){
 
       Person X = new Person("Alex",30,true);
